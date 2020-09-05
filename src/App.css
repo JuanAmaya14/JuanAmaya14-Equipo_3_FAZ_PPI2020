@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.Header{
+  background-color: #0C793D;
+  display: block;
+  align-items: center;
+  min-height: 15%;
+  max-height: 15%;
+}
