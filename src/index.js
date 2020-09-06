@@ -1,17 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Encabezado_EW from'./component/Encabezado_EW';
-import Logo from'./component/Logo';
-import Inicio_S from'./component/Inicio_S';
+import { BrowserRouter , Route, Switch} from 'react-router-dom';
+import Inicio from './pages/Inicio';
+import Registro from './pages/Registro';
+import Principal from './pages/Principal';
 
 ReactDOM.render(
-  <React.StrictMode>
-    
-    <Logo />
-    <Inicio_S />
+<React.StrictMode>
 
-  </React.StrictMode>,
+  <BrowserRouter>
+     <Switch>
+      
+       <Route exact path="/" component={Inicio}/>
+       <Route exact path="/Registro" component={Registro}/>
+       <Route exact path="/Principal" component={Principal}/>
+
+     </Switch>
+      
+  </BrowserRouter>
+</React.StrictMode>,
+    
+  
   document.getElementById('root')
 );
 

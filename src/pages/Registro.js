@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Encabezado_EW from'../component/Encabezado_EW';
+import React, {Component} from 'react';
 import Logo from'../component/Logo';
 
-ReactDOM.render(
-  <React.StrictMode>
-    
-    <Logo />
-
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+class Registro extends Component {
+  render(){
+      return(
+          <div>
+            <center>
+                  <Logo/>
+                 <h1>Earthquake Warning</h1>
+                 
+              </center>
+             
+          </div>
+      );
+  }
+}
+export default Registro;

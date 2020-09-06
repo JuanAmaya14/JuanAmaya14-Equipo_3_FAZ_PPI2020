@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-
+import Logo from './Logo_1.png';
 
 class Encabezado_EW extends Component {
     render(){
         return(
             <div class="Header">
+             
+              <img src={Logo} alt="" width="20%" heigth="20%" class="img3"></img>
               
-                <img src="./Earthquake-Warning/ew/Imagenes/Logo.png" alt=""></img>
-                <h2>Earthquake Warning</h2>
+               
+                <h2 class="inline">Earthquake Warning</h2>
                
             </div>
         );

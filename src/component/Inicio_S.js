@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import Logo from './Logo.js';
+
 class Inicio_S extends Component {
     render(){
         return(
-            <div>
-             
-                   <Link to={Logo}><button>Boton</button></Link>
+            
+            <form>
+                <div class="form-group formularios">
+                    <label for="ejemplo">Usuario</label><br></br>
+                    <input type="text" class="form-control"></input>
+                </div>
+                <div>
+                     <label>Contraseña</label><br></br>
+                     <input type="password" class="form-control"></input>
+                </div>
                 
-               
-            </div>
+                <Link to="/Principal"><button type="submit" class="btn btn-primary boton1">Iniciar Sesión</button></Link>
+            </form>
         );
     }
 }

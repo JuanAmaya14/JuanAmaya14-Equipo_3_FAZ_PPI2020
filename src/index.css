@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: 'Verdana';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,19 +12,42 @@ code {
 
 .Header{
   background-color: #0C793D;
-  display: block;
-  align-items: center;
-  min-height: 9%;
-  max-height: 10%;
-  font-size: 22px;
+  display: flex;
+ 
+  height:20%;
+  font-size: 15px;
 }
 
-.imgP{
-  display: block;
-  align-items: center;
-  margin-top:15%;
-  margin-bottom: 10%;
-}
 .Titulos{
 font-size: 30px;
+}
+button{
+  background-color: #AE7D57;
+  margin: 2%;
+  font-size: 18px;
+  width: 50%;
+}
+.formularios{
+  margin: 4%;
+}
+label{
+  font-size: 24px;
+}
+
+.label2{
+  font-size: 35px;
+}
+input{
+  margin:3%;
+}
+.img3{
+  align-items: left;
+  display:inline;
+  padding:2%;
+  border:2%;
+}
+.inline{
+  display:inline;
+  
+
 }
