@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #CEFAD2;
-  
+  margin:0;
  
 }
 
@@ -15,7 +15,6 @@ code {
 .Header{
   background-color: #0C793D;
   display: block;
-  margin: 0;
   height:25%;
   font-size: 140%;
   margin:0;
@@ -42,8 +41,8 @@ input{
   margin:3%;
 }
 .img3{
-  padding:2%;
-  border:1%;
+  padding:1px;
+  border:2%;
   float: left;
 }
 .inline{
@@ -63,10 +62,42 @@ input{
 }
 .Menu{
   background-color: #0C793D;
+  position:absolute;
+  bottom:0;
   width:100%;
-  position:bottom;
-  float: bottom;
+  padding-inline-start:0;
+  
 }
-nav ul li{
-  background:#AE7D57 ;
+.btn2{
+  margin-right: 4%;
+  margin-left: 4%;
+  align:left;
+}
+.btn4{
+  margin-right: 4%;
+  margin-left: 4%;
+  align:center;
+}
+.btn4{
+  margin-right: 4%;
+  margin-left: 4%;
+  align:right ;
+}
+ul{
+  padding-inline-start: 0px;
+  margin-block-start: 2%;
+  margin-block-end: 2%;
+}
+.imgM{
+  
+  margin-right: 4%;
+  margin-left: 4%;
+}
+.Anadir{
+  float: right;
+  display:inline;
+  background-color:#AE7D57;
+  position:absolute;
+  bottom:10%;
+  border-radius: 50px;;
 }
