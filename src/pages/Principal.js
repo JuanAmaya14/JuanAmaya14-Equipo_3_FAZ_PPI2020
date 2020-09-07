@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Encabezado_EW from '../component/Encabezado_EW';
+import Menu from '../component/Menu';
 
 class Principal extends Component {
     render(){
@@ -7,9 +8,10 @@ class Principal extends Component {
             <div>
               
                   <Encabezado_EW/>
-                  <center>
-                      
-                </center>
+                  
+                      <label align="center" class="Titulo">Dispositivos</label>
+                      <Menu/>
+               
                
             </div>
         );

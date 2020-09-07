@@ -6,12 +6,11 @@ class Encabezado_EW extends Component {
         return(
             <div class="Header">
              
-              <img src={Logo} alt="" width="20%" heigth="20%" class="img3"></img>
-              
-               
-                <h2 class="inline">Earthquake Warning</h2>
-               
+              <img src={Logo} alt="" width="20%" heigth="20%" class="img3 inline"></img>
+              <label class="inline-block label3" align="center"><strong>Earthquake Warning</strong></label>
+            
             </div>
+            
         );
     }
 }

@@ -15,7 +15,7 @@ class Inicio_S extends Component {
                      <input type="password" class="form-control"></input>
                 </div>
                 
-                <Link to="/Principal"><button type="submit" class="btn btn-primary boton1">Iniciar Sesión</button></Link>
+                <Link to="/Principal"><button type="submit" class="btn btn-primary boton1 button">Iniciar Sesión</button></Link>
             </form>
         );
     }

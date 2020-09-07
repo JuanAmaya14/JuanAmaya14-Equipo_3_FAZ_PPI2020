@@ -7,7 +7,7 @@ class Registro extends Component {
           <div>
             <center>
                   <Logo/>
-                 <h1>Earthquake Warning</h1>
+                  <label class="label2"><strong>Earthquake Warning</strong></label>
                  
               </center>
              
