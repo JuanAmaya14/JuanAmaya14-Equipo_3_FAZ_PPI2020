@@ -7,16 +7,23 @@ import {Link} from 'react-router-dom';
 class Principal extends Component {
     render(){
         return(
+          <center>
             <div>
-              <center>
+              
               <Encabezado_EW/>
                         <br/>
+                        <label align="center" class="Titulo"><strong>Principal</strong></label>
+                        </div>
+                        
+                        <div>
+                        <label class="label2"><strong></strong></label>
                       <label align="center" class="Titulo"><strong>Dispositivos</strong></label>
                       <Link to="/"><img src={Anadir} alt="" width="15%" heigth="15%" class="imgM Anadir"></img></Link>
                       <Menu/>
-              </center>
+              
                
             </div>
+            </center>
         );
     }
 }
