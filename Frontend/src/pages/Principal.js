@@ -11,12 +11,10 @@ class Principal extends Component {
             <div>
               
               <Encabezado_EW/>
-                        <br/>
-                        <label align="center" class="Titulo"><strong>Principal</strong></label>
-                        </div>
+                      
+                       
                         
-                        <div>
-                        <label class="label2"><strong></strong></label>
+                        <br/>
                       <label align="center" class="Titulo"><strong>Dispositivos</strong></label>
                       <Link to="/"><img src={Anadir} alt="" width="15%" heigth="15%" class="imgM Anadir"></img></Link>
                       <Menu/>

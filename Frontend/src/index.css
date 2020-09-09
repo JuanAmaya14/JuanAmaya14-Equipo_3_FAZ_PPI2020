@@ -58,7 +58,7 @@ input{
 .label3{
   margin-bottom: 8%;
   margin-top:8%;
-  align:right;
+ 
 }
 .Menu{
   background-color: #0C793D;
@@ -71,17 +71,17 @@ input{
 .btn2{
   margin-right: 4%;
   margin-left: 4%;
-  align:left;
+
 }
 .btn4{
   margin-right: 4%;
   margin-left: 4%;
-  align:center;
+ 
 }
 .btn4{
   margin-right: 4%;
   margin-left: 4%;
-  align:right ;
+
 }
 ul{
   padding-inline-start: 0px;

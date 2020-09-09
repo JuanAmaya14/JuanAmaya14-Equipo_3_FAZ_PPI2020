@@ -15,7 +15,7 @@ ReactDOM.render(
   <BrowserRouter>
      <Switch>
       
-       <Route exact path="/Inicio" component={Inicio}/>
+       <Route exact path="/" component={Inicio}/>
        <Route exact path="/Registro" component={Registro}/>
        <Route exact path="/Principal" component={Principal}/>
        <Route exact path="/M_Guia" component={M_Guia}/>
