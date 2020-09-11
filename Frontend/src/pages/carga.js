@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Encabezado_EW from '../component/Encabezado_EW';
+import '../component/carga.css';
 
 
 class carga extends Component {
