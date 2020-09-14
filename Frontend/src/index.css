@@ -62,7 +62,7 @@ input{
 }
 .Menu{
   background-color: #0C793D;
-  position:absolute;
+  position: fixed;
   bottom:0;
   width:100%;
   padding-inline-start:0;
@@ -105,3 +105,10 @@ ul{
 .Atras{
 position: right;
 }
+
+.text_borde{
+margin-left: 20px;
+margin-right: 20px;
+
+}
+
