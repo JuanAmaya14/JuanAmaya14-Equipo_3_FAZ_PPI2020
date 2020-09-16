@@ -6,6 +6,8 @@ class Inicio_S extends Component {
         return(
             
             <form>
+            
+           
                 <div class="form-group formularios">
                     <label for="ejemplo">Usuario</label><br></br>
                     <input type="text" class="form-control"></input>

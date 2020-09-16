@@ -3,6 +3,7 @@ import Encabezado_EW from '../component/Encabezado_EW';
 import Menu from '../component/Menu';
 import Anadir from '../component/Anadir.png';
 import {Link} from 'react-router-dom';
+import '../component/carga.css';
 
 class Principal extends Component {
     render(){
@@ -23,6 +24,7 @@ class Principal extends Component {
             </div>
             </center>
         );
+       
     }
 }
 export default Principal;

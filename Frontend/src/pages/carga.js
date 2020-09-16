@@ -10,27 +10,15 @@ class carga extends Component {
                 <div>
                     <Encabezado_EW />
                 </div>
-
-
-
-
-                <div id="contenedor_carga">
-                    <div id="carga"></div>
-                </div>
-
+                <div class="loader-container">
+    <div class="loader"></div>
+    <div class="loader2"></div>
+</div>
 
             </center>
 
-        );
-
-        window.onload = function () {
-            var contenedor = document.getElementById('contenedor_carga');
-
-            contenedor.style.visibility = 'hidden';
-            contenedor.style.opacity = '0';
+        );     
         }
-
-    }
 
 }
 
