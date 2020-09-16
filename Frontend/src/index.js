@@ -9,6 +9,7 @@ import M_Guia from './pages/M_Guia';
 import Que_son from './pages/Que_son';
 import Que_hacer from './pages/Que_hacer';
 import carga from './pages/carga.js';
+import Configuracion from './pages/Configuracion.js';
 
 ReactDOM.render(
 <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.render(
        <Route exact path="/Que_son" component={Que_son}/>
        <Route exact path="/Que_hacer" component={Que_hacer}/>
        <Route exact path="/carga" component={carga}/>
+       <Route exact path="/Configuracion" component={Configuracion}/>
 
 
 

@@ -14,7 +14,7 @@ class Menu extends Component {
                <ul>
                    <Link to="/M_Guia" class="btn2"><img src={Guia} alt="" width="10%" heigth="10%" class="imgM"></img></Link>
                    <Link to="/Principal" class="nav-brand btn3"><img src={Dispositivos} alt="" width="10%" heigth="10%" class="imgM"></img></Link>
-                   <Link to="/" class="nav-brand btn4"><img src={Configuracion} alt="" width="10%" heigth="10%" class="imgM"></img></Link>
+                   <Link to="/Configuracion" class="nav-brand btn4"><img src={Configuracion} alt="" width="10%" heigth="10%" class="imgM"></img></Link>
                </ul>
            </nav>
               

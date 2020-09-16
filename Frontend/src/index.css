@@ -18,10 +18,11 @@ code {
   height:25%;
   font-size: 140%;
   margin:0;
+ 
 }
 
 .Titulos{
-font-size: 30px;
+font-size: 100px;
 }
 .button{
   background-color: #AE7D57;
@@ -52,6 +53,9 @@ input{
   display:inline-block;
 }
 
+.block{
+  display:block;
+}
 .img1{
   margin: 3%;
 }
@@ -69,18 +73,18 @@ input{
   
 }
 .btn2{
-  margin-right: 4%;
-  margin-left: 4%;
+  margin-right: 6%;
+  margin-left: 6%;
 
 }
 .btn4{
-  margin-right: 4%;
-  margin-left: 4%;
+  margin-right: 6%;
+  margin-left: 6%;
  
 }
 .btn4{
-  margin-right: 4%;
-  margin-left: 4%;
+  margin-right: 6%;
+  margin-left: 6%;
 
 }
 ul{
@@ -112,3 +116,27 @@ margin-right: 20px;
 
 }
 
+.Perfil{
+  
+  margin: 10%;
+  float:left;
+  display:block;
+}
+
+.label4{
+  margin:7%
+  
+}
+.buttonConf{
+  color: black;
+  margin-left:10%;
+  float:left;
+ 
+}
+a{
+  text-decoration: none;
+}
+.img4{
+  float: right;
+  margin-right: 10%;
+}
