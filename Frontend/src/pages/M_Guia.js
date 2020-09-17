@@ -2,29 +2,48 @@ import React, { Component } from 'react';
 import Encabezado_EW from '../component/Encabezado_EW';
 import Menu from '../component/Menu';
 import { Link } from 'react-router-dom';
+import '../index.css';
+
 
 class M_Guia extends Component {
     render() {
         return (
-            <center>
             <div>
-                
-                
-                    <Encabezado_EW />
-                    <label class="label2"><strong></strong></label>
-                    <label align="center" class="Titulo"><strong>Guia</strong></label>
-                    </div>
-                    <label class="label2"><strong></strong></label>
-                    <div>
-                    <Link to="/Que_son"><button type="submit" class="btn btn-primary boton1 button">¿Que son los terremotos?</button></Link>
-                    <Link to="/Que_hacer"><button type="submit" class="btn btn-primary boton1 button">¿Que hacer en caso de un terremoto?</button></Link>
-                    <Link to="/Noticias"><button type="submit" class="btn btn-primary boton1 button">Noticias</button></Link>
+                <div>
+                    <center>
 
-                    <Menu />
-                
+                        <Encabezado_EW />
+                        <label class="label2"><strong></strong></label>
+                        <label align="center"><h2><strong>Guia</strong></h2></label>
+
+                    </center>
+
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+            
+
+                <div>
+
+                    <center>
+                        <Link to="/Que_son"><button type="submit" class="btn btn-primary boton1 button">¿Que son los terremotos?</button></Link>
+                        <br></br>
+                        <br></br>
+                        <Link to="/Que_hacer"><button type="submit" class="btn btn-primary boton1 button">¿Que hacer en caso de un terremoto?</button></Link>
+                        <br></br>
+                        <br></br>     
+                         <Link to="/Noticias"><button type="submit" class="btn btn-primary boton1 button">Noticias</button></Link>
+                    </center>
+                </div>
+
+                <center>
+                    <div><Menu /></div>
+                </center>
+
             </div>
 
-            </center>
+
         );
     }
 }
