@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Encabezado_EW from '../component/Encabezado_EW';
-import Menu from '../component/Menu';
+import Menu_1 from '../component/Menu_1';
 import { Link } from 'react-router-dom';
 import '../index.css';
 
@@ -38,7 +38,7 @@ class M_Guia extends Component {
                 </div>
 
                 <center>
-                    <div><Menu /></div>
+                    <div><Menu_1/></div>
                 </center>
 
             </div>

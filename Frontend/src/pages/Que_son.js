@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Encabezado_EW from '../component/Encabezado_EW';
-import Menu from '../component/Menu';
+import Menu_1 from '../component/Menu_1';
 import Crater from '../component/Crater.png';
 import Derrumbe from '../component/Derrumbe.png';
 import Atras from '../component/Atras.png';
@@ -24,8 +24,9 @@ class Que_son extends Component {
                     </div>
 
                     <center>
-                    <label align="center" class="Titulo"><strong>¿Que son los terremotos?</strong></label>
+                    <label align="center"><h2><strong>¿Que son los terremotos?</strong></h2></label>
 
+                    
                     <br></br>
                     <p>Son fenómenos naturales que ocurren sin aviso, no son pronosticarles, es un movimiento violento del terreno ocasionado por la liberación de energía que surge del interior de la tierra.</p>
                   
@@ -35,7 +36,7 @@ class Que_son extends Component {
                     <img src={Derrumbe} alt="" width="40%" heigth="40%"></img>
 
 
-                    <Menu />
+                    <Menu_1/>
                
 
                     </center>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Encabezado_EW from '../component/Encabezado_EW';
-import Menu from '../component/Menu';
+import Menu_1 from '../component/Menu_1';
 import { Link } from 'react-router-dom';
 import Atras from '../component/Atras.png';
 import '../index.css';
@@ -18,15 +18,16 @@ class Que_hacer extends Component {
                 </center>
 
                 <div class="Atras">
-                    <Link to="/M_Guia"><img src={Atras} alt="" width="15%" heigth="15%" positio></img></Link>
+                    <Link to="/M_Guia"><img src={Atras} alt="" width="15%" heigth="15%"></img></Link>
                 </div>
 
                 <div>
                 <center>
-                    <label align="center" class="Titulo"><strong>¿Que hacer en caso de un terremoto?</strong></label>
+                <label align="center"><h2><strong> ¿Que hacer en caso de un terremoto?</strong></h2></label>
+
                     <br></br>
                     </center>
-
+                   
                     <div class="text_borde">
                     <center>
                     <br></br>
@@ -83,7 +84,7 @@ class Que_hacer extends Component {
 
                 <div>
                     <center>
-                        <Menu />
+                        <Menu_1/>
                     </center>
                 </div>
 

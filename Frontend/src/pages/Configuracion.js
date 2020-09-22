@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Encabezado_EW from '../component/Encabezado_EW';
-import Menu from '../component/Menu';
+import Menu_2 from '../component/Menu_2';
 import Perfil from '../component/Perfil.png';
 import {Link} from 'react-router-dom';
 import ConfSiguiente from '../component/ConfSiguiente.png';
@@ -14,7 +14,7 @@ class Principal extends Component {
               <Encabezado_EW/>
 
                         <br/>
-                      <label align="center" class="Titulo block"><strong>Configuración</strong></label>
+                        <label align="center"><h2><strong>Configuracion</strong></h2></label>
                       <div class="Perfil" align="left">
                           <img src={Perfil} alt="" width="25%" heigth="25%" class="inline img3"></img>
                           <label class="inline-block label4">Usuario</label>
@@ -30,7 +30,7 @@ class Principal extends Component {
                         <img src={ConfSiguiente} alt="" width="5%" heigth="5%" class="inline-block img4"></img></Link>
                       </div>
                      
-                      <Menu/>
+                      <Menu_2/>
             </div>
             </center>
         );
