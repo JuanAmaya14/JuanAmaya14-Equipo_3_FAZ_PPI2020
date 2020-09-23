@@ -5,7 +5,7 @@ import Perfil from '../component/Perfil.png';
 import {Link} from 'react-router-dom';
 import ConfSiguiente from '../component/ConfSiguiente.png';
 
-class Principal extends Component {
+class Configuracion extends Component {
     render(){
         return(
           <center>
@@ -36,4 +36,4 @@ class Principal extends Component {
         );
     }
 }
-export default Principal;
+export default Configuracion;
