@@ -31,7 +31,7 @@ class Estado_Disp extends Component {
                             <div className="slide round"></div>
                             </label>      
                       </div>
-                      <Link to="/"><button type="submit" class="btn btn-primary boton1 button">Registro de Terremotos</button></Link>
+                      <Link to="/Registro_T"><button type="submit" class="btn btn-primary boton1 button">Registro de Terremotos</button></Link>
                         
                      
                       <Menu_2/>

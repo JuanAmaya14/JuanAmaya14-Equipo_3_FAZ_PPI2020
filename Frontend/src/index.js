@@ -11,6 +11,7 @@ import Que_hacer from './pages/Que_hacer';
 import Configuracion from './pages/Configuracion.js';
 import Anadir from './pages/Anadir.js';
 import Estado_Disp from './pages/Estado_Disp';
+import Registro_T from './pages/Registro_T';
 
 ReactDOM.render(
 <React.StrictMode>
@@ -26,7 +27,8 @@ ReactDOM.render(
        <Route exact path="/Que_hacer" component={Que_hacer}/>
        <Route exact path="/Configuracion" component={Configuracion}/>
        <Route exact path="/Anadir" component={Anadir}/>
-       <Route exact path="/Estado_Dispositivo" component={Estado_Disp}/>
+       <Route exact path="/Estado_Disp" component={Estado_Disp}/>
+       <Route exact path="/Registro_T" component={Registro_T}/>
 
 
 

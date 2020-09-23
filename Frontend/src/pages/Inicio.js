@@ -9,6 +9,8 @@ class Inicio extends Component {
             <div>
               <center>
                     <Logo />
+<br></br>
+                    <br></br>
                    <label class="label2"><strong>Earthquake Warning</strong></label>
                    <Inicio_S />
                    <Link to="/Registro"><button type="submit" class="btn btn-primary boton1 button">Registrarse</button></Link>

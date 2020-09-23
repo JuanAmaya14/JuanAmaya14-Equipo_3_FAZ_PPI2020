@@ -6,7 +6,7 @@ class Logo extends Component {
         return(
             <div align="center">
               <center>
-                   <img src={Logo_1} alt="" width="140" heigth="140" class="img1"></img>
+                   <img src={Logo_1} alt="" width="100px" heigth="100px" class="img1"></img>
                    
                 </center>
                

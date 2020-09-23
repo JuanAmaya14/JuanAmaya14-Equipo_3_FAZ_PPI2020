@@ -7,7 +7,7 @@ import Atras from '../component/Atras.png';
 
 
 
-class Principal extends Component {
+class Anadir extends Component {
   render() {
     return (
 
@@ -40,7 +40,7 @@ class Principal extends Component {
 
           <br></br>
           <br></br>
-          <Link to="/Registro"><button type="submit" class="btn btn-primary boton1 button">Registrarse</button></Link>
+          <Link to="/Principal"><button type="submit" class="btn btn-primary boton1 button">Registrar</button></Link>
         </center>
 
 
@@ -54,4 +54,4 @@ class Principal extends Component {
 
   }
 }
-export default Principal;
+export default Anadir;
