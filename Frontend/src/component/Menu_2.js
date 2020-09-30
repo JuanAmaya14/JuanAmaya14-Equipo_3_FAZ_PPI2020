@@ -5,7 +5,7 @@ import Guia from './Guia.png';
 import Dispositivos from './Dispositivos.png';
 import Configuracion from './Configuracion.png';
 
-class Menu extends Component {
+class Menu_2 extends Component {
     render(){
         return(
           <div class="span-navbar-bottom">
@@ -25,4 +25,4 @@ class Menu extends Component {
         );
     }
 }
-export default Menu;
+export default Menu_2;

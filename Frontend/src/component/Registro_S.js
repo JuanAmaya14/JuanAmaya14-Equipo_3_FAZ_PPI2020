@@ -19,7 +19,7 @@ class Inicio_S extends Component {
                      <input type="email" class="form-control"></input>
                 </div>
                 
-                <Link to="/Principal"><button type="submit" class="btn btn-primary boton1 button">Registrarse</button></Link>
+                <Link to="/"><button type="submit" class="btn btn-primary boton1 button">Registrarse</button></Link>
             </form>
         );
     }

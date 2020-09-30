@@ -40,12 +40,12 @@ class Anadir extends Component {
 
           <br></br>
           <br></br>
-          <Link to="/Principal"><button type="submit" class="btn btn-primary boton1 button">Registrar</button></Link>
+          <Link to="/Principal_Dis"><button type="submit" class="btn btn-primary boton1 button">Registrar</button></Link>
         </center>
 
 
         <center>
-          <Menu />
+          <Menu/>
         </center>
 
       </div>

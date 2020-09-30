@@ -230,3 +230,30 @@ input:checked + .slide:before{
   margin-left: 10%;
   float:left;
 }
+.tabla_r{
+border-collapse: collapse;
+border: black 2px solid;
+  margin-left: 10%;
+  text-align: center;
+}
+
+
+
+.tabla_R{
+  margin-left: 10%;
+  margin-right: 10%;
+      border-radius: 3%;
+      text-align: center;
+      border-collapse: collapse;
+  }
+  
+.li {
+      list-style-type: none;
+      float: left;
+      margin-left: 5%;
+  }
+  
+  
+
+
+
