@@ -6,6 +6,7 @@ import Inicio from './pages/Inicio';
 import Registro from './pages/Registro';
 import Principal from './pages/Principal';
 import M_Guia from './pages/M_Guia';
+import Noticias from './pages/Noticias';
 import Que_son from './pages/Que_son';
 import Que_hacer from './pages/Que_hacer';
 import Configuracion from './pages/Configuracion.js';
@@ -26,6 +27,7 @@ ReactDOM.render(
        <Route exact path="/M_Guia" component={M_Guia}/>
        <Route exact path="/Que_son" component={Que_son}/>
        <Route exact path="/Que_hacer" component={Que_hacer}/>
+       <Route exact path="/Noticias" component={Noticias}/>
        <Route exact path="/Configuracion" component={Configuracion}/>
        <Route exact path="/Anadir" component={Anadir}/>
        <Route exact path="/Estado_Disp" component={Estado_Disp}/>
