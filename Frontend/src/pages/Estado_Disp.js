@@ -3,7 +3,7 @@ import Encabezado_EW from '../component/Encabezado_EW';
 import Menu_dis_a from '../component/Menu_dis_a';
 import { Link } from 'react-router-dom';
 import Atras from '../component/Atras.png';
-
+import '../index.css';
 
 class Estado_Disp extends Component {
   render() {
@@ -19,29 +19,32 @@ class Estado_Disp extends Component {
         </div>
         <center>
           <label align="center block"><h2><strong>Dispositivo 1</strong></h2></label>
-          <label align="left" className="label4">Estado: </label>
+          </center>
+          <label align="right" class="label4">Estado: </label>
           <br />
           <div class="block">
-
+          <center>
             <span className="inline-block textEst">Notificación</span>
             <label className="switchBtn">
               <input type="checkbox" />
               <div className="slide round"></div>
             </label>
+          </center>
           </div>
           <div class="block">
-
+<center>
             <span className="inline-block textEst">Alarma</span>
             <label className="switchBtn">
               <input type="checkbox" />
               <div className="slide round"></div>
             </label>
+            </center>
           </div>
+          <center>
           <Link to="/Registro_T"><button type="submit" class="btn btn-primary boton1 button">Registro de Terremotos</button></Link>
-
-
+</center>
           <Menu_dis_a />
-        </center>
+      
       </div>
 
     );
