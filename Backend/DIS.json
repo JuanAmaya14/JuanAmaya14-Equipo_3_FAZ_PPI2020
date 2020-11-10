@@ -1,0 +1,61 @@
+[
+    {
+      "id_Dispositivos": "1",
+      "Estado": "Conectado",
+      "Notificacion": "Activado",
+      "Alarma": "Activado",
+      "Nombre": "Dispositivo_1",
+      "id_U": "1001"
+    },
+    {
+      "id_Dispositivos": "2",
+      "Estado": "Conectado",
+      "Notificacion": "Desactivado",
+      "Alarma": "Activado",
+      "Nombre": "Dispositivo_2",
+      "id_U": "1001"
+    },
+    {
+      "id_Dispositivos": "5",
+      "Estado": "Conectado",
+      "Notificacion": "Activado",
+      "Alarma": "Activado",
+      "Nombre": "Dispositivo_3",
+      "id_U": "1001"
+    },
+    {
+      "id_Dispositivos": "6",
+      "Estado": "Conectado",
+      "Notificacion": "Desactivado",
+      "Alarma": "Activado",
+      "Nombre": "Dispositivo_2",
+      "id_U": "1002"
+    },
+    {
+      "id_Dispositivos": "1",
+      "Estado": "Conectado",
+      "Notificacion": "Activado",
+      "Alarma": "Activado",
+      "Nombre": "Dispositivo_1",
+      "id_U": "1002",
+      "id": "IteBLLB"
+    },
+    {
+      "id_Dispositivos": "4",
+      "Estado": "Conectado",
+      "Notificacion": "Activado",
+      "Alarma": "Activado",
+      "Nombre": "Dispositivo_1",
+      "id_U": "1002",
+      "id": "zk77zxO"
+    },
+    {
+      "id_Dispositivos": "4",
+      "Estado": "Conectado",
+      "Notificacion": "Activado",
+      "Alarma": "Activado",
+      "Nombre": "Dispositivo_1",
+      "id_U": "1002",
+      "id": "Pq7UdGI"
+    }
+  ]

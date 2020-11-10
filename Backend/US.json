@@ -1,0 +1,70 @@
+[
+  {
+    "id_U": "1001",
+    "Nombre": "Ivan Tang",
+    "Correo": "ivantshi@gmail.com",
+    "Clave": "12345678"
+  },
+  {
+    "id_U": "1002",
+    "Nombre": "Manuela Pérez",
+    "Correo": "manuelat@gmail.com",
+    "Clave": "123456789"
+  },
+  {
+    "id_U": "1003",
+    "Nombre": "Carlos B",
+    "Correo": "carlos@gmail.com",
+    "Clave": "12345678"
+  },
+  {
+    "id_U": "1004",
+    "Nombre": "Carlos",
+    "Correo": "carlos@gmail.com",
+    "Clave": "54321"
+  },
+  {
+    "id_U": "1005",
+    "Nombre": "Juan",
+    "Correo": "juan@gmail.com",
+    "Clave": "12345"
+  },
+  {
+    "id_U": "1006",
+    "Nombre": "Carlos",
+    "Correo": "carlos@gmail.com",
+    "Clave": "54321"
+  },
+  {
+    "id_U": "1007",
+    "Nombre": "Juan",
+    "Correo": "juan@gmail.com",
+    "Clave": "12345"
+  },
+  {
+    "id_U": "1008",
+    "Nombre": "Juan Valdez",
+    "Correo": "i@gmail.com",
+    "Clave": "12345678"
+  },
+  {
+    "id": "1009",
+    "Nombre": "Carlos",
+    "Correo": "carlos@gmail.com",
+    "Clave": "54321"
+  },
+  {
+    "id_U": "10010",
+    "Nombre": "Ivan Tang",
+    "Correo": "ivantshi@gmail.com",
+    "Clave": "12345678",
+    "id": "mVUChN9"
+  },
+  {
+    "id_U": "10011",
+    "Nombre": "Ivan Tang",
+    "Correo": "ivantshi@gmail.com",
+    "Clave": "12345678",
+    "id": "KMlCApt"
+  }
+]

@@ -1,0 +1,39 @@
+[
+    {
+      "id_Registros": "1",
+      "Fecha": "2020-10-14",
+      "Hora": "15:00:00.000000",
+      "Duracion": "00:00:10.000000",
+      "id_Dispositivo": "1"
+    },
+    {
+      "id_Registros": "2",
+      "Fecha": "2020-06-11",
+      "Hora": "15:00:00.000000",
+      "Duracion": "00:00:10.000000",
+      "id_Dispositivo": "1"
+    },
+    {
+      "id_Registros": "3",
+      "Fecha": "2020-10-10",
+      "Hora": "05:00:00.000000",
+      "Duracion": "00:00:10.000000",
+      "id_Dispositivo": "1"
+    },
+    {
+      "id_Registros": "4",
+      "Fecha": "2020-1-14",
+      "Hora": "15:00:00.000000",
+      "Duracion": "00:00:10.000000",
+      "id_Dispositivo": "2",
+      "id": "1001"
+    },
+    {
+      "id_Registros": "5",
+      "Fecha": "2020-1-14",
+      "Hora": "15:00:00.000000",
+      "Duracion": "00:00:10.000000",
+      "id_Dispositivo": "2",
+      "id": "1002"
+    }
+  ]
