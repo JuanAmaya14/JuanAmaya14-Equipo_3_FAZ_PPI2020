@@ -6,7 +6,7 @@ const router = express.Router();
 //Se conecta con el archivo db
 const mysqlConnection = require('../db/db');
 
-//Metodo GET, trae todos los datos de la tabla actores
+//Metodo GET
 
 router.get('/Registro', (req, res) => {
 

@@ -19,7 +19,7 @@ router.get('/Usuario', (req, res) => {
 });
 
 
-//Método POST, añade un nuevo usuario
+//Método POST
 router.post('/Usuario', (req, res) => {
 
     const { Nombre, Correo, Clave } = req.body;

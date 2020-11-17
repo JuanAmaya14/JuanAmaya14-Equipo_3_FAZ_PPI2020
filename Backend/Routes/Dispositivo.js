@@ -52,7 +52,7 @@ router.put('/Dispositivo/:Cod_Dispositivos', (req, res) => {
         });
 });
 
-//Metodo GET, por id, en la ruta :id se pone el id que se quiere buscar, no se pone el :id en la ruta
+//Metodo GET, por id
 router.get('/Dispositivo/:Cod_U', (req, res) => {
     const { Cod_U } = req.params;//Se introduce un parámetro, el que se quiera buscar
     //Se pone la sentencia SQL
