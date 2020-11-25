@@ -9,7 +9,7 @@ class Inicio extends Component {
             <div>
               <center>
                     <Logo />
-<br></br>
+                    <br></br>
                     <br></br>
                    <label class="label2"><strong>Earthquake Warning</strong></label>
                    <Inicio_S />
@@ -19,5 +19,5 @@ class Inicio extends Component {
             </div>
         );
     }
-}
+}//Línea Cambiada
 export default Inicio;
