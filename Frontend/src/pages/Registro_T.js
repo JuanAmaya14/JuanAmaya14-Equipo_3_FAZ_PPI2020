@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Atras from '../component/Atras.png';
 import '../index.css';
 
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     fetch('http://localhost:4001/api/Dispositivos')
     .then(response => response.json())
     .then(data => loadHTMLTable(data['data']));
@@ -31,7 +31,7 @@ function loadHTMLTable(data) {
     });
   
     table.innerHTML = tableHtml;
-}
+}*/
 
 class Registro_T extends Component {
     render() {
@@ -52,7 +52,7 @@ class Registro_T extends Component {
 
 <br/>
                 <div >
-                    <table id="table">
+                   
                         <ul class="tabla_R">
                             <li class="li"><b>Dia/Mes/Año</b></li>
                             <li class="li"><b>Hora</b></li>
@@ -60,7 +60,7 @@ class Registro_T extends Component {
                         </ul>
                         <tbody></tbody>
 
-                </table>
+               
                     
                 </div>
 

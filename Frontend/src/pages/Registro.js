@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Logo from '../component/Logo.jsx';
+import Logo from '../component/Logo.js';
 import {Link} from 'react-router-dom';
 import Registro_S from '../component/Registro_S';
 

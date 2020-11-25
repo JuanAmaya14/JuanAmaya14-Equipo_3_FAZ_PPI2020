@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+//import './pages/Usuario'
 import { BrowserRouter , Route, Switch} from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import Registro from './pages/Registro';
