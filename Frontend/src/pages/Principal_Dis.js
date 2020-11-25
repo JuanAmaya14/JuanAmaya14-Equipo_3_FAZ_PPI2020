@@ -12,9 +12,7 @@ class Principal_Dis extends Component {
             <div>
               <center>
               <Encabezado_EW/>
-                      
-             
-                        
+                         
                         <br/>
                          <label align="center"><h2><strong>Dispositivos</strong></h2></label>
                        </center> 
@@ -37,4 +35,6 @@ class Principal_Dis extends Component {
        
     }
 }
+
+
 export default Principal_Dis;

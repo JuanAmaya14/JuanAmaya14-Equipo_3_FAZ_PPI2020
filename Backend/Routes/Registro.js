@@ -1,66 +1,83 @@
-//Archivo de Métodos
-
-const express = require('express');
-const router = express.Router();
 
 //Se conecta con el archivo db
 const mysqlConnection = require('../db/db');
 
-//Metodo GET
+let instance=null;
 
-router.get('/Registro', (req, res) => {
+//Metodo GET, trae todos los datos de la tabla Dispositivos
 
-    mysqlConnection.query('SELECT * FROM Registro ', (err, rows, fields) => {
-      if (!err) {
-        res.json(rows);
-      } else {
+class Registro {
+    static getServiceInstance(){
+        return instance ? instance : new Registro();
+    }
+    async getRegistros(){
+        try {
+            const response = await new Promise((resolve,reject)=>{
+                
+                mysqlConnection.query('SELECT * FROM Registro', (err, results) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(results); 
+                    
+            })
+        });
+        return response;
+    } catch (err){
         console.log(err);
-      }
-    });
-  });
+    }}
 
-  //Método POST
-  router.post('/Registro', (req, res) => {
-
-    const { Cod_Registros, Fecha, Hora, Duracion, Cod_Dispositivo } = req.body;
-  
-    let Registro = [Cod_Registros, Fecha, Hora, Duracion, Cod_Dispositivo];
-  
-    let nuevoRegistro = `INSERT INTO Registro(Cod_Registros,Fecha,Hora,Duracion,Cod_Dispositivo) VALUES(?,?,?,?,?)`;
-    mysqlConnection.query(nuevoRegistro, Registro, (err, results, fields) => {
-      if (err) {
-        return console.error(err.message);
-      }
-      res.json({ message: `El proceso fue exitoso`, })
-    });
-  });
-
-  //DELETE
-router.delete('/Registro/:Cod_Registros', (req, res) => {
-    const { Cod_Registros } = req.params;
-    mysqlConnection.query('DELETE FROM Registro WHERE Cod_Registros = ?',
-      [Cod_Registros], (err, rows, fields) => {
-        if (!err) {
-          res.json({ status: 'Registro eliminado!' });
-        } else {
-          console.log(err);
+    async NuevoRegistro(Fecha,Hora,Duracion,Cod_Dispositivo){
+        try {
+            const id = await new Promise((resolve, reject) =>{
+                
+                mysqlConnection.query('INSERT INTO Registro(Fecha,Hora,Duracion,Cod_Dispositivo) VALUES(?,?,?,?)', [Fecha,Hora,Duracion,Cod_Dispositivo],(err, result) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(result.id);  
+                })
+            });
+            return {
+                Cod_Registro : id,
+                Fecha:Fecha,
+                Hora:Hora, 
+                Duracion:Duracion,
+                Cod_Dispositivo:Cod_Dispositivo
+            };
+        
+        } catch (error){
+        console.log(error);
         }
-      });
-  });
+    }
 
-  //Metodo GET, por id
+    async EliminarRegistro(Cod_Registro){
+        try{
+            Cod_Registro=parseInt(Cod_Registro,10);
+            const response = await new Promise((resolve,reject)=>{
+                
+                mysqlConnection.query('DELETE FROM Registro WHERE Cod_Registro = ?', [Cod_Registro],(err, result) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(result.affectedRows); 
+            })
+        });
+        return response === 1 ? true : false;
+        } catch(error) {
+            console.log(error);
+            return false;
+        }
+    }
+    async BuscarporCod_Dispositivo(Cod_Dispositivo){
+        try{
+            const response = await new Promise((resolve,reject)=>{
+                
+                mysqlConnection.query('SELECT * FROM Registro WHERE Cod_Dispositivo = ?', [Cod_Dispositivo],(err, results) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(results);  
+            })
+           });
+           return response;
+        } catch (error){
+        console.log(error);
+       }
+    }
+}
 
-  router.get('/Registro/:Cod_Dispositivo', (req, res) => {
-    const { Cod_Dispositivo } = req.params;//Se introduce un parámetro, el que se quiera buscar
-    //Se pone la sentencia SQL
-    mysqlConnection.query('SELECT * FROM Registro WHERE Cod_Dispositivo = ?', [Cod_Dispositivo], (err, rows, fields) => {
-      if (!err) {
-        res.json(rows[0]);
-      } else {
-        console.log(err);
-      }
-    });
-  });
-
-  //Se exporta, siempre debe de ir ésta línea
-module.exports = router;
+//Se exporta, siempre debe de ir ésta línea
+module.exports = Registro;

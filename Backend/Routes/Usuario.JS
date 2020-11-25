@@ -1,54 +1,73 @@
-//Archivo de Métodos
-
-const express = require('express');
-const router = express.Router();
 
 //Se conecta con el archivo db
 const mysqlConnection = require('../db/db');
 
-//Metodo GET, trae todos los datos de la tabla actores
-router.get('/Usuario', (req, res) => {
+let instance=null;
 
-    mysqlConnection.query('SELECT * FROM Usuario ', (err, rows, fields) => {
-        if (!err) {
-            res.json(rows);
-        } else {
-            console.log(err);
-        }
-    });
-});
+//Metodo GET, trae todos los datos de la tabla Dispositivos
 
-
-//Método POST
-router.post('/Usuario', (req, res) => {
-
-    const { Nombre, Correo, Clave } = req.body;
-
-    let Usuario = [Nombre, Correo, Clave];
-
-    let nuevoUsuario = `INSERT INTO Usuario(Nombre,Correo,Clave) VALUES(?,?,?)`;
-    mysqlConnection.query(nuevoUsuario, Usuario, (err, results, fields) => {
-        if (err) {
-            return console.error(err.message);
-        }
-        res.json({ message: `El proceso de usuario fue exitoso`, })
-    });
-});
-
-//Método PUT
-router.put('/Usuario/:Cod_U', (req, res) => {
-    const { Nombre, Correo, Clave } = req.body;
-    const { Cod_U } = req.params;
-    mysqlConnection.query(`UPDATE Usuario SET Nombre = ?,Correo = ?,
-    Clave = ? WHERE Cod_U = ?`,
-        [Nombre, Correo, Clave, Cod_U], (err, rows, fields) => {
-            if (!err) {
-                res.json({ status: 'Usuario actualizado' });
-            } else {
-                console.log(err);
-            }
+class Usuario {
+    static getServiceInstance(){
+        return instance ? instance : new Usuario();
+    }
+    async getUsuarios(){
+        try {
+            const response = await new Promise((resolve,reject)=>{
+                
+                mysqlConnection.query('SELECT * FROM Usuario', (err, results) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(results); 
+                    
+            })
         });
-});
+        return response;
+    } catch (err){
+        console.log(err);
+    }}
+
+    async NuevoUsuario(Nombre,Correo,Clave){
+        try {
+            const Cod_U = await new Promise((resolve,reject)=>{
+               
+                mysqlConnection.query('INSERT INTO Usuario(Nombre,Correo,Clave) VALUES(?,?,?)', [Nombre,Correo,Clave],(err, results) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(results.Cod_U); 
+                    
+            })
+             });
+            return{
+                Cod_U:Cod_U,
+                Nombre:Nombre,
+                Correo:Correo,
+                Clave:Clave
+            };
+        
+      } catch (err){
+        console.log(err);
+      }
+    }
+
+    async ActualizarUsuario(Cod_U,Nombre,Clave,Correo){
+        console.log("Cod "+Cod_U+ " Nombre "+Nombre);
+        try{
+            Cod_U=parseInt(Cod_U,11);
+            const response = await new Promise((resolve,reject)=>{
+                
+                mysqlConnection.query('UPDATE Usuario SET Nombre = ?,Correo = ?,Clave = ? WHERE Cod_U = ?', [Cod_U,Nombre,Clave,Correo],(err, result) => {
+                    if (err) reject(new Error(err.message));
+                    resolve(result.affectedRows);
+                    //res.json(rows[0]);
+            })
+          });
+          return response === 1 ? true : false;
+        
+        } catch (error){
+        console.log(error);
+        
+      }
+    }
+    
+}
 
 //Se exporta, siempre debe de ir ésta línea
-module.exports = router;
+module.exports = Usuario;

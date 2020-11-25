@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 import '../index.css';
 import Atras from '../component/Atras.png';
 
-
-
 class Anadir extends Component {
   render() {
     return (
@@ -42,16 +40,11 @@ class Anadir extends Component {
           <br></br>
           <Link to="/Principal_Dis"><button type="submit" class="btn btn-primary boton1 button">Registrar</button></Link>
         </center>
-
-
         <center>
           <Menu/>
         </center>
-
       </div>
-
     );
-
   }
 }
 export default Anadir;
